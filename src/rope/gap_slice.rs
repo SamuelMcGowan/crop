@@ -151,7 +151,7 @@ impl<'a> GapSlice<'a> {
 
         let mut new_summary = self.truncate_last_char(summary);
 
-        if self.last_chunk().ends_with('r') {
+        if self.last_chunk().ends_with('\r') {
             new_summary = self.truncate_last_char(new_summary)
         }
 
